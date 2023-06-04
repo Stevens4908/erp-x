@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault()
 
         if(Email === "sha" & Password === "1234" ) {
-            window.open("https://youtube.com/")
+           
         }
         else {
             alert("credenciales incorrectas")
@@ -38,9 +38,9 @@ return(
 <React.Fragment>
 
 
-    <Container className="">
-      <Row>
-        <Col>
+    <Container className="mt-5 ">
+      <Row className="justify-content-center">
+        <Col md={4} className="bg-success">
 
             <Form onSubmit={handleSubmit}>
 
