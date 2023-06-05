@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Login = () => {
+const Login = ({OnLogin}) => {
 
     const [Email , setEmail] = useState('')
     const [Password , setPassword] = useState('')
@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault()
 
         if(Email === "sha" & Password === "1234" ) {
-           
+           OnLogin()
         }
         else {
             alert("credenciales incorrectas")

@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const Members = () => {
@@ -6,7 +7,7 @@ const Members = () => {
 return(
 
 <div>
-hello Members
+<h2 className="text-white">Miembros</h2>
 </div>
 
 )

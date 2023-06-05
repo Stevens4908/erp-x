@@ -1,0 +1,60 @@
+.dashboard-container{
+    flex-direction: column;
+   display: flex;
+    height: 100vh;
+    background-image: url('../../assets/images/fondo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sidebar{
+    background-color: #ffffff00;
+    width: 200px;
+    overflow-y: auto;
+    border-right: 1px solid #5700bb;
+   
+    
+}
+
+.sidebar ul{
+    padding: 1em;
+    list-style: none;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    visibility: visible;
+}
+
+.navbar{
+   
+    background-color: rgba(255, 255, 255, 0) !important;
+    
+}
+
+.content-container{
+    display: flex;
+    flex: 1;
+}
+
+.content{
+    flex: 1;
+    padding: 1em ;
+}
+
+.custom-dropdown .nav-link,
+.custom-dropdown .nav-link:focus,
+.custom-dropdown .nav-link:hover,
+.custom-dropdown .nav-link:active {
+  color: white; 
+}
+
+.cardbg{
+    background-image: url('../../assets/images/universe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.247) !important;
+}
+
