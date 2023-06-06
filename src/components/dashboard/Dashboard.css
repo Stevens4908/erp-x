@@ -22,6 +22,11 @@
     list-style: none;
 }
 
+.sidebar li{
+    color: white;
+    cursor: pointer;
+}
+
 .sidebar a{
     text-decoration: none;
     color: white;
@@ -41,7 +46,7 @@
 
 .content{
     flex: 1;
-    padding: 1em ;
+    padding: 3em ;
 }
 
 .custom-dropdown .nav-link,

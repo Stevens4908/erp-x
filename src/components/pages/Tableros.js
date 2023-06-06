@@ -4,46 +4,30 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import cardbg from '../../assets/images/working.jpg'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Home';
+import Cards from './Card';
+import AreaAdministrativa from './AreaAdministrativa';
 
-const Tableros = () => {
+const Tableros = ({ setActiveSection }) => {
+
+  const handleCardClick = (name) => {
+    setActiveSection(name.toLowerCase());
+  };
 
     return (
 
 
 <React.Fragment>
+  
+            <div>
+                <h1 className='text-white'>Tableros </h1>
+            </div>
+ 
+        
+            <Cards name="Area Administrativa" onClick={handleCardClick} className="" >
 
-   
-
-<div>
-    <h1 className='text-white'>Tableros </h1>
-</div>
-
-
-<Card style={{ width: '18rem' }} className='cardbg'>
-      <Card.Body>
-        <Card.Title className='text-white'>Crear Nuevo tablero</Card.Title>
-       
-        <Card.Text className='text-white'>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">
-            <Link to="/dashboard/tableros/areaadministrativa">
-            Card Link
-            </Link>
+            </Cards>
             
-        </Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
-      </Card.Body>
-    </Card>
-
-
-    
-
-
-
-
-
 </React.Fragment>
 
 
