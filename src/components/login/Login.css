@@ -1,0 +1,18 @@
+.login-container{
+    background-image: url('../../assets/images/FONDO\ 5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login{
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 8%;
+}
+
+body{background-color: black;}

@@ -37,22 +37,24 @@ return(
 
 <React.Fragment>
 
+<div className="login-container">
 
-    <Container className="mt-5 ">
+
+     <Container className="">
       <Row className="justify-content-center">
-        <Col md={4} className="bg-success">
+        <Col md={4} className="login py-5 px-3">
 
             <Form onSubmit={handleSubmit}>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label >Email</Form.Label>
-                    <Form.Control type="text" placeholder="Enter email" value={Email} onChange={handleEmailChange}/>
+                    
+                    <Form.Control type="text" placeholder="Usuario" value={Email} onChange={handleEmailChange}/>
                     
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Contraseña</Form.Label>
-                    <Form.Control type="password" placeholder="Password" value={Password} onChange={handlePasswordChange}/>
+                    
+                    <Form.Control type="password" placeholder="Contraseña" value={Password} onChange={handlePasswordChange}/>
                 </Form.Group>
 
                 
@@ -65,6 +67,9 @@ return(
         </Col>
       </Row>
     </Container>
+
+</div>
+   
         
 
 

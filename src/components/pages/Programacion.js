@@ -3,7 +3,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-const AreaAdministrativa = () => {
+const Programacion = () => {
 
     return (
 
@@ -11,7 +11,7 @@ const AreaAdministrativa = () => {
         <React.Fragment>
 
                 <div>
-                    <h1 className='text-white'>Area Administrativa</h1>
+                    <h1 className='text-white'>Programacion</h1>
                 </div>
 
         </React.Fragment>
@@ -22,4 +22,4 @@ const AreaAdministrativa = () => {
 
 }
 
-export default AreaAdministrativa;
+export default Programacion;

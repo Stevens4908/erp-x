@@ -5,14 +5,30 @@
     background-image: url('../../assets/images/fondo1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     
 }
 
+.content-sidebar-container{
+    
+    flex: 1;
+  display: flex;
+  overflow: hidden;
+ 
+}
+
+.sidebar-container {
+    flex: 0 0 200px;
+    overflow-y: auto; 
+    border-right: 1px solid #5700bb;
+  }
+
+
 .sidebar{
     background-color: #ffffff00;
-    width: 200px;
-    overflow-y: auto;
-    border-right: 1px solid #5700bb;
+    
+   padding: 20px ;
+   
    
     
 }
@@ -40,13 +56,16 @@
 }
 
 .content-container{
-    display: flex;
+
+   
     flex: 1;
+    overflow-y: auto;
 }
 
 .content{
-    flex: 1;
+   
     padding: 3em ;
+   
 }
 
 .custom-dropdown .nav-link,

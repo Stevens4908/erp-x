@@ -14,7 +14,7 @@ const Card = ({ name, onClick }) => {
         <Container>
             <Row className="">
                 <Col className="d-flex justify-content-center">
-                <h3 className='text-white '>{name}</h3>
+                <h6 className='text-white '>{name}</h6>
                 </Col>
             </Row>
         </Container>

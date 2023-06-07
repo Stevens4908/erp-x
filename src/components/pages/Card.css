@@ -1,13 +1,26 @@
 .tarjeta{
     cursor: pointer;
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
     background-image: url("../../assets/images/universe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 8%;
+    opacity: 0.7;
+    
+}
+
+.tarjeta h6{
+    color: white !important;
+}
+
+.tarjeta:hover{
+
+    opacity: 1;
 }
 
 .awc{
     width: 70px;
     height: auto;
 }
+

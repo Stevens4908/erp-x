@@ -16,8 +16,16 @@ return(
 
         <Row>
             <Col md={5} className="mt-3">
-            {/*<img src={log} class=" img-fluid" alt="..." className="awc" />*/}
-                <h1 className="text-white">Adworkchain</h1>
+                <Row>
+                    <Col md={2}>
+                    <img src={log} class=" img-fluid" alt="..." className="awc" />
+                    </Col>
+                    <Col md={4}>
+                    <h1 className="text-white">Adworkchain</h1>
+                    </Col>   
+                </Row>
+            {/**/}
+             
             </Col >
                 
             <Col md={5} className="mt-5">
@@ -53,6 +61,13 @@ return(
             <p className="text-white">Cualquiera que tenga un enlace de invitación puede unirse a este espacio de trabajo</p>
             </Col>
 
+        </Row>
+
+        <Row className="mt-5">
+        <form className="search-form">
+                <input type="text" placeholder="Filtrar por nombre" className="search-input text-white"/>
+                
+              </form>
         </Row>
 
         </Col>

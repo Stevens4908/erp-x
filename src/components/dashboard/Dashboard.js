@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Home from '../pages/Home'
 import Members from '../pages/Members'
 import Tableros from '../pages/Tableros'
 import Calendario from '../pages/Calendario'
@@ -11,6 +9,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AreaAdministrativa from '../pages/AreaAdministrativa'
+import Produccion from '../pages/Produccion'
+import Programacion from '../pages/Programacion'
 import user from '../../assets/images/fotox.jpg'
 
 const Dashboard = () => {
@@ -27,6 +27,10 @@ const Dashboard = () => {
           return <Calendario />;
         case 'area administrativa':
           return <AreaAdministrativa />;
+        case 'producción y marketing':
+          return <Produccion />;
+          case 'programación':
+            return <Programacion />;
         default:
           return null;
       }
@@ -123,35 +127,49 @@ const Dashboard = () => {
                     </Container>
 
                 </Navbar>
+                
+
+                <div className='content-sidebar-container'>
 
 
-        <div className='content-container'>
+                    <div className='sidebar-container'>
 
-                <div className='sidebar'>
+                        <div className='sidebar'>
 
-                    <ul>
+                            <ul>
 
-                        <li onClick={() => setActiveSection('tableros')}>Tableros</li>
+                                <li onClick={() => setActiveSection('tableros')}>Tableros</li>
 
-                        <li onClick={() => setActiveSection('miembros')}>Miembros</li>
+                                <li onClick={() => setActiveSection('miembros')}>Miembros</li>
 
-                        <li onClick={() => setActiveSection('calendario')}>Calendario</li>
+                                <li onClick={() => setActiveSection('calendario')}>Calendario</li>
 
-                    </ul>
+                            </ul>
+
+                        </div>
+                    </div>   
+
+                        
+
+                    <div className='content-container'>
+
+                            <div className='content'>
+
+                                        {renderContent()}
+
+                            </div>
+                    </div>
+                    
+
 
                 </div>
 
-                <div className='content'>
-
-                        {renderContent()}
-
-                </div>
-
-
-        </div>
-               
+        
 
     </div>
+
+
+
 
 
         </React.Fragment>

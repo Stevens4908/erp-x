@@ -1,0 +1,69 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .search-input {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.5;
+    color: #000;
+  }
+  
+
+
+  .search-input::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  
+
+  .custom-select {
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .custom-select::placeholder {
+    color: white;
+  }
+  
+  .custom-select option {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+  }
+  
+  .nuevo-tablero{
+    position: relative;
+    background-image: url('../../assets/images/working.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8%;
+    cursor: pointer;
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .nuevo-tablero::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+  }
+
+  .nuevo-tablero h6{
+   
+    z-index: 1;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
